@@ -1,0 +1,169 @@
+.first,
+.second,
+.third,
+.last,
+aside {
+    border: 1px solid #666;
+    box-shadow: 2px 2px 2px black;
+    background: white;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.first h1,
+.second h1,
+.third h1,
+.last h1,
+aside h2 {
+    padding-top: 10px;
+}
+
+.first h3,
+.second h3,
+.last h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.first article,
+.second article {
+    text-indent: 2em;
+    margin-top: 10px;
+}
+
+.author, .pubTime {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.first img,
+.second img {
+    margin-top: 10px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.second ul {
+    margin-top: 10px;
+}
+.second ul li,
+.third ul li {
+    list-style: none;
+}
+
+.third img {
+    width: 120px;
+    height: 120px;
+
+}
+.third figure figcaption {
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+}
+.third figure {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px black;
+    height: 150px;
+    width: 120px;
+    margin: 20px 0 20px 40px;
+}
+
+.last ol {
+    margin: 10px 0 0 50px;
+}
+
+.last table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+}
+.last table td,
+.last table th{
+    padding: 2px;
+}
+
+aside {
+    margin-bottom: 20px;
+}
+aside h2 {
+    border-left: 3px solid #666;
+    padding-left: 10px;
+}
+aside form {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+aside div {
+    margin-top: 10px;
+}
+#submit {
+    width: 100%;
+    background: dodgerblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+}
+
+.email:after,
+.password:after,
+.rePassword:after,
+.gender:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.email {
+    margin-bottom: 30px;
+}
+.email .leftSide,
+.password .leftSide,
+.rePassword .leftSide,
+.gender .leftSide{
+    width: 40%;
+    float: left;
+}
+.email .input-email,
+.password .input-password,
+.rePassword .input-re-password,
+.gender .input-gender {
+    float: right;
+}
+.email .rightSide,
+.password .rightSide,
+.rePassword .rightSide {
+    width: 60%;
+    float: left;
+    position: relative;
+}
+.email .rightSide input,
+.password .rightSide input,
+.rePassword .rightSide input,
+.gender .rightSide input,
+.gender .rightSide label{
+    float: left;
+}
+.gender .rightSide input,
+.gender .rightSide label {
+    margin-right: 15px;
+}
+
+.email .rightSide span,
+.rePassword .rightSide span{
+    position: absolute;
+    left: 0px;
+    top: 22px;
+    font-size: 12px;
+    color: #aaa;
+}
