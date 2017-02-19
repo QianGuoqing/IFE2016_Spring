@@ -54,10 +54,17 @@ aside h2 {
     list-style: none;
 }
 
+.third li {
+    float: left;
+}
+.third .clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 .third img {
     width: 120px;
     height: 120px;
-
 }
 .third figure figcaption {
     text-align: center;
@@ -89,14 +96,19 @@ aside h2 {
 
 aside {
     margin-bottom: 20px;
+    width: 365px;
+    height: 600px;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 aside h2 {
     border-left: 3px solid #666;
     padding-left: 10px;
+    font-size: 18px;
 }
 aside form {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 aside div {
@@ -114,6 +126,11 @@ aside div {
     padding: 8px 0 8px 0;
     text-decoration: none;
     margin: 10px 0 10px 0;
+    transition: all .3s;
+}
+
+#submit:hover {
+    opacity: 0.8;
 }
 
 .email:after,
@@ -171,21 +188,54 @@ aside div {
 aside table {
     width: 100%;
     margin: 20px 10px 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 aside table td {
-    padding: 5px;
+    /*padding: 5px;*/
+    padding: 5px 0 5px 0;
 }
 aside table td:nth-child(2n + 1) {
-    text-align: right;
+    text-align: left;
 }
 
 aside table td:nth-child(2n + 1) {
     padding-left: 15px;
 }
 
+aside table td:nth-child(2n) {
+    padding-left: 3px;
+}
+
 aside table span {
     font-size: 12px;
     color: #aaa;
+}
+
+main {
+    /*position: relative;*/
+}
+.main-container {
+    position: relative;
+}
+aside {
+    /*float: right;*/
+}
+@media (min-width: 1050px) {
+    aside {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        /*padding-left: 20px;*/
+    }
+}
+@media (max-width: 1050px) {
+    main {
+        float: left;
+    }
+    aside {
+        width: 640px;
+        float: left;
+        margin: 20px;
+    }
 }
