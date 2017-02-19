@@ -1,0 +1,73 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #999;
+    background: #eee;
+    position: relative;
+    min-width: 640px;
+}
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.team-brief {
+    border: 1px solid #999;
+    box-sizing: border-box;
+    width: 200px;
+    margin: 20px;
+    float: left;
+}
+.team-brief .logo {
+    float: left;
+    padding: 20px;
+}
+.team-brief .logo img {
+    border: 1px solid #999;
+    width: 80px;
+    height: 80px;
+}
+.team-name {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    padding: 20px;
+}
+
+.team-main {
+    border: 1px solid #999;
+    margin-left: 240px;
+    margin-right: 160px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.team-logo {
+    width: 120px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 20px 20px 20px 0;
+    background: white;
+    float: right;
+    /*top: 20px;*/
+    /*right: 20px;*/
+    /*position: absolute;*/
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.team-logo li {
+    list-style: none;
+    float: left;
+}
+.team-logo div {
+    margin: 10px 20px;
+}
+.team-logo img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+}
