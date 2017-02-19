@@ -167,3 +167,25 @@ aside div {
     font-size: 12px;
     color: #aaa;
 }
+
+aside table {
+    width: 100%;
+    margin: 20px 10px 0 10px;
+    font-size: 14px;
+}
+
+aside table td {
+    padding: 5px;
+}
+aside table td:nth-child(2n + 1) {
+    text-align: right;
+}
+
+aside table td:nth-child(2n + 1) {
+    padding-left: 15px;
+}
+
+aside table span {
+    font-size: 12px;
+    color: #aaa;
+}

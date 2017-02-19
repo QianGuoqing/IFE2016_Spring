@@ -193,71 +193,135 @@
 
     <aside>
         <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-        <form>
-            <div class="email">
-                <div class="leftSide">
-                    <span class="input-email">请输入邮箱地址：</span>
-                </div>
-                <div class="rightSide">
-                    <input type="text" placeholder="这是一个文本输入框">
-                    <span>邮箱地址请按要求格式输入</span>
-                </div>
-            </div>
-            <div class="password">
-                <div class="leftSide">
-                    <div class="input-password">
-                        请输入密码：
-                    </div>
-                </div>
-                <div class="rightSide">
-                    <input type="password" placeholder="这是一个文本输入框">
-                </div>
-            </div>
-            <div class="rePassword">
-                <div class="leftSide">
-                    <div class="input-re-password">
-                        重复输入密码：
-                    </div>
-                </div>
-                <div class="rightSide">
-                    <input type="password" placeholder="这是一个文本输入框">
+        <!--<form>-->
+            <!--<div class="email">-->
+                <!--<div class="leftSide">-->
+                    <!--<span class="input-email">请输入邮箱地址：</span>-->
+                <!--</div>-->
+                <!--<div class="rightSide">-->
+                    <!--<input type="text" placeholder="这是一个文本输入框">-->
+                    <!--<span>邮箱地址请按要求格式输入</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="password">-->
+                <!--<div class="leftSide">-->
+                    <!--<div class="input-password">-->
+                        <!--请输入密码：-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="rightSide">-->
+                    <!--<input type="password" placeholder="这是一个文本输入框">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="rePassword">-->
+                <!--<div class="leftSide">-->
+                    <!--<div class="input-re-password">-->
+                        <!--重复输入密码：-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="rightSide">-->
+                    <!--<input type="password" placeholder="这是一个文本输入框">-->
+                    <!--<span>密码请为6-16位英文数字</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="gender">-->
+                <!--<div class="leftSide">-->
+                    <!--<div class="input-gender">-->
+                        <!--性别：-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="rightSide">-->
+                    <!--<input type="radio" name="gender" value="male" id="male">-->
+                    <!--<label for="male">男</label>-->
+                    <!--<input type="radio" name="gender" value="female" id="female">-->
+                    <!--<label for="female">女</label>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--城市：-->
+                <!--<select name="cities">-->
+                    <!--<option value="beijing">北京</option>-->
+                    <!--<option value="shanghai">上海</option>-->
+                    <!--<option value="shenzhen">深圳</option>-->
+                    <!--<option value="suzhou">苏州</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--爱好：-->
+                <!--<input type="checkbox"> 运动-->
+                <!--<input type="checkbox"> 艺术-->
+                <!--<input type="checkbox"> 科学-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--个人描述：-->
+                <!--<textarea placeholder="这是多行输入框，请输入你的个人描述" cols="50" rows="10"></textarea>-->
+            <!--</div>-->
+            <!--<a href="# " id="submit">确认提交</a>-->
+        <!--</form>-->
+        <table>
+            <tr>
+                <td>请输入邮箱地址</td>
+                <td><input type="email" placeholder="这是一个文本框"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span>邮箱地址请按要求输入</span>
+                </td>
+            </tr>
+            <tr>
+                <td>请输入密码</td>
+                <td><input type="password" placeholder="这是一个文本框"></td>
+            </tr>
+            <tr>
+                <td>请重复输入密码</td>
+                <td><input type="password" placeholder="这是一个文本框"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
                     <span>密码请为6-16位英文数字</span>
-                </div>
-            </div>
-            <div class="gender">
-                <div class="leftSide">
-                    <div class="input-gender">
-                        性别：
-                    </div>
-                </div>
-                <div class="rightSide">
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
                     <input type="radio" name="gender" value="male" id="male">
                     <label for="male">男</label>
                     <input type="radio" name="gender" value="female" id="female">
                     <label for="female">女</label>
-                </div>
-            </div>
-            <div>
-                城市：
-                <select name="cities">
+                </td>
+            </tr>
+            <tr>
+                <td>城市</td>
+                <td>
+                    <select name="cities">
                     <option value="beijing">北京</option>
                     <option value="shanghai">上海</option>
                     <option value="shenzhen">深圳</option>
                     <option value="suzhou">苏州</option>
-                </select>
-            </div>
-            <div>
-                爱好：
-                <input type="checkbox"> 运动
-                <input type="checkbox"> 艺术
-                <input type="checkbox"> 科学
-            </div>
-            <div>
-                个人描述：
-                <textarea placeholder="这是多行输入框，请输入你的个人描述" cols="50" rows="10"></textarea>
-            </div>
-            <a href="# " id="submit">确认提交</a>
-        </form>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好</td>
+                <td>
+                    <input type="checkbox" id="sport">
+                    <label for="sport">运动</label>
+                    <input type="checkbox" id="art">
+                    <label for="art">艺术</label>
+                    <input type="checkbox" id="science">
+                    <label for="science">科学</label>
+                </td>
+            </tr>
+            <tr>
+                <td>个人描述</td>
+                <td>
+                    <textarea placeholder="这是多行输入框，请输入你的个人描述" cols="40" rows="8"></textarea>
+                </td>
+            </tr>
+        </table>
+        <a href="# " id="submit">确认提交</a>
     </aside>
 </main>
 
