@@ -1,0 +1,37 @@
+header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header {
+    background: grey;
+    height: 40px;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    float: left;
+    padding-left: 20px;
+}
+header ul {
+    float: right;
+    line-height: 40px;
+}
+header li {
+    list-style: none;
+    float: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
+header li a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
