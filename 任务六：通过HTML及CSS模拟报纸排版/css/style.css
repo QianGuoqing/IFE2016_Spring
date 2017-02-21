@@ -1,51 +1,31 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.page {
-    width: 980px;
-    height: 1386px;
-    border: 1px solid #ccc;
-    margin: 0 auto;
-}
-.container {
-    width: 892px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #938e8c;
-}
-header .header-url {
-    background: #d45d5c;
-    font-size: 12px;
-    font-family: 黑体;
-    width: 110px;
-    height: 61px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-header .header-url a {
-    color: #ffffff;
-    text-decoration: none;
-}
-header .header-date {
-    color: #d45d5c;
-    font-size: 12px;
-    font-family: 黑体;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+
+main {
+    margin-top: 20px;
 }
 
 main .first {
     display: flex;
     justify-content: space-between;
+}
+main figure {
+    position: relative;
+}
+
+main figure .img-left,
+main figure .img-right {
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    top: 0;
+}
+
+main figure .img-left {
+    background: rgba(0, 255, 0, 0.3);
+}
+main figure .img-right {
+    background: rgba(255, 0, 0, 0.3);
+    right: 0;
 }
 
 main .first figure,
@@ -97,13 +77,12 @@ main .first .about {
 
 .about .about-css {
     display: flex;
+    align-items: flex-end;
 }
-.about-css .big-number {
+.big-number {
     font-size: 55px;
     color: #cc8091;
     font-family: "Microsoft Yahei";
-    display: flex;
-    align-items: flex-end;
 }
 
 .big-css {
@@ -126,4 +105,88 @@ main .first .about {
 .about-css {
     display: flex;
     align-items: flex-end;
+}
+
+.second {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.second .what,
+.second .how,
+.second .when {
+    width: 270px;
+}
+.second .what-title,
+.second .when-title,
+.second .how-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Microsoft Yahei";
+}
+
+.what-title {
+    color: #418c59;
+}
+.when-title {
+    color: #d2994f;
+}
+.how-title {
+    color: #cc7680;
+}
+
+.what p, .how p, .when p,
+.how-info div {
+    font-size: 12px;
+    color: #231815;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+    opacity: 0.7;
+}
+.how-info div span {
+    color: #cd4a48;
+    font-style: italic;
+}
+
+.third {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-left {
+    width: 415px;
+}
+
+.third-left .title {
+    border-bottom: 2px solid #11456b;
+}
+.third-left .title .big-title {
+    font-size: 42px;
+    color: #11456b;
+    font-family: 黑体;
+    font-weight: bold;
+    line-height: 40px;
+}
+.third-left .title .big-title span {
+    font-size: 59px;
+    color: #f5e327;
+    font-family: 黑体;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.third-left .title .sub-title {
+    font-size: 33px;
+    color: #11456b;
+    font-family: 黑体;
+    font-weight: bold;
+}
+
+.third-right figure,
+.third-right figure img{
+    width: 458px;
+    height: 275px;
 }
