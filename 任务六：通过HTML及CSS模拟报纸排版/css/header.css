@@ -11,10 +11,20 @@
 }
 .container {
     width: 892px;
+    height: 1386px;
     margin: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+}
 header {
     display: flex;
     justify-content: space-between;

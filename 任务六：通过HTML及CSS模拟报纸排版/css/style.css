@@ -112,7 +112,6 @@ main .first .about {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
-    margin-top: 20px;
 }
 .second .what,
 .second .how,
@@ -152,9 +151,9 @@ main .first .about {
 }
 
 .third {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .third-left {
@@ -226,4 +225,119 @@ main .first .about {
     align-self: flex-end;
     margin-bottom: 15px;
     margin-left: 5px;
+}
+
+.third-left .content .qian {
+    font-size: 70px;
+    color: #f5e327;
+    font-family: "Microsoft Yahei";
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 2px 5px 5px 0;
+}
+
+.third-left .content p {
+    font-size: 12px;
+    color: #767777;
+    font-family: 宋体;
+    line-height: 16px;
+    position: relative;
+}
+.third-left .content figure {
+    margin: 10px 0px 5px 10px;
+}
+.third-left .content figure,
+.third-left .content img {
+    width: 250px;
+    height: 359px;
+    float: right;
+}
+
+.third-right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.last {
+    width: 459px;
+    height: 318px;
+    background: #eeedd6;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.last .list {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 25px 10px 10px 40px;
+}
+.last .list li {
+    list-style: square;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    color: #515b5b;
+    font-family: 宋体;
+}
+.last .list li span {
+    font-size: 12px;
+    text-align: right;
+    font-style: italic;
+}
+
+.last-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.last-bottom .bottom-left {
+    width: 260px;
+    height: 160px;
+    background: #D45D5C;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.last-bottom .bottom-right {
+    width: 190px;
+    font-size: 14px;
+    color: #515b5b;
+    font-family: 黑体;
+    font-style: italic;
+    line-height: 16px;
+}
+.last-bottom .bottom-right span {
+    color: #d45d5c;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bottom-left .div1 {
+    height: 86px;
+    border-right: 2px solid #ffffff;
+    font-size: 110px;
+    color: #ffffff;
+    font-family: "Microsoft Yahei";
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.bottom-left .div2 {
+    height: 86px;
+    margin-top: 37px;
+    margin-left: 5px;
+}
+
+.bottom-left .div2 .top {
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 24px;
+}
+.bottom-left .div2 .next {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 16px;
 }
