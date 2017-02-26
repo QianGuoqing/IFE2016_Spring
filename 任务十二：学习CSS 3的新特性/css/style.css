@@ -21,3 +21,25 @@ table tr:nth-child(3),
 table tr:nth-child(4) {
     color: #ff0000;
 }
+
+.aninmateText {
+    transition: all .3s;
+    margin-left: 100px;
+}
+.aninmateText:focus {
+    transform: scale(1.5, 1);
+}
+
+@keyframes animating {
+    from {
+
+    }
+    to {
+        width: 200px;
+    }
+}
+
+.txt:focus {
+    animation-name: animating;
+    animation-duration: 1s;
+}
