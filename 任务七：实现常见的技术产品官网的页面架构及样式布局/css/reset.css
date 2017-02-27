@@ -1,0 +1,15 @@
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
