@@ -21,6 +21,26 @@
          获取aqi-input输入的值，并显示在aqi-display中
          */
 
+        // 获得必要的元素
+        var inputElement = document.getElementById('aqi-input');
+        var btn = document.getElementById('button');
+        var outputElement = document.getElementById('aqi-display');
+
+        // 对按钮进行监听,考虑到浏览器的兼容性
+        if (btn.addEventListener) {
+            btn.addEventListener('click', function () {
+                outputElement.innerText = inputElement.value;
+            }, false);
+        } else if (btn.attachEvent) {
+            btn.attachEvent('onclick', function () {
+                outputElement.innerText = inputElement.value;
+            });
+        } else {
+            btn['onclick'] = function () {
+                outputElement.innerText = inputElement.value;
+            }
+        }
+
     })();
 
 </script>
