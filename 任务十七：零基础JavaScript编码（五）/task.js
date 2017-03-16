@@ -33,6 +33,7 @@ function randomBuildData(seed) {
     return returnData;
 }
 
+// randomData是一个对象，包含几个月的数据
 var aqiSourceData = {
     "北京": randomBuildData(500),
     "上海": randomBuildData(300),
@@ -44,6 +45,8 @@ var aqiSourceData = {
     "厦门": randomBuildData(100),
     "沈阳": randomBuildData(500)
 };
+
+//console.log(aqiSourceData)
 
 // 用于渲染图表的数据
 var chartData = {};
@@ -75,14 +78,36 @@ function graTimeChange() {
 /**
  * select发生变化时的处理函数
  */
+var aqiChart = document.querySelector('.aqi-chart-wrap');
+var citySelect = document.querySelector('#city-select');
 function citySelectChange() {
     // 确定是否选项发生了变化
+    var str = '';
+    var dataAry = [];
+    var dataObj = {};
+
+        // alert(this.value); -> this.value 代表当前选中的值
+        for (var key in aqiSourceData) {
+            if (key === this.value) {
+                for (var data in aqiSourceData[key]) {
+                    str += data + ', ' + aqiSourceData[key][data] + '\n';
+                    dataObj.date = data;
+                    dataObj.aqiData = aqiSourceData[key][data];
+                    console.log(dataObj)
+                }
+            }
+        }
+        aqiChart.innerText = str;
+        // console.log(dataAry)
+
 
     // 设置对应数据
 
     // 调用图表渲染函数
 }
-
+citySelect.onchange = function () {
+    citySelectChange();
+}
 /**
  * 初始化日、周、月的radio事件，当点击时，调用函数graTimeChange
  */
@@ -95,9 +120,21 @@ function initGraTimeForm() {
  */
 function initCitySelector() {
     // 读取aqiSourceData中的城市，然后设置id为city-select的下拉列表中的选项
-
+    var citySelect = document.getElementById('city-select');
+    var cityAry = [];
+    for (var key in aqiSourceData) {
+        cityAry.push(key);
+    }
     // 给select设置事件，当选项发生变化时调用函数citySelectChange
+    var str = '';
+    for (var i = 0; i < cityAry.length; i++) {
+        str += '<option>';
+        str += cityAry[i];
+        str += '</option>';
+    }
+    citySelect.innerHTML = str;
 
+    //citySelectChange();
 }
 
 /**
