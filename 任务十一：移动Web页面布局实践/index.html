@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/less.min.js"></script>
+    <script>
+        let pixelRatio = 1 / window.devicePixelRatio;
+        document.write(`<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=${pixelRatio}, minimum-scale=${pixelRatio},maximum-scale=${pixelRatio}">`);
+        let html = document.querySelector('html');
+        let pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 16 + 'px';
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="back"> 返回 </a>
+            <h3>这是标题</h3>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li>
+                    <a href="#">导航</a>
+                </li>
+                <li class="nav-active">
+                    <a href="#">导航</a>
+                </li>
+                <li>
+                    <a href="#">导航</a>
+                </li>
+                <li>
+                    <a href="#">导航</a>
+                </li>
+                <li>
+                    <a href="#">导航</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="banner"></section>
+    <section class="tags">
+        <div class="container">
+            <ul class="tag-list">
+                <li>
+                    <div class="tag-image">
+                        <img src="./image/logo.jpg" alt="">
+                    </div>
+                    <h4 class="tag-name">标签</h4>
+                </li>
+                <li>
+                    <div class="tag-image">
+                        <img src="./image/logo.jpg" alt="">
+                    </div>
+                    <h4 class="tag-name">标签</h4>
+                </li>
+                <li>
+                    <div class="tag-image">
+                        <img src="./image/logo.jpg" alt="">
+                    </div>
+                    <h4 class="tag-name">标签</h4>
+                </li>
+                <li>
+                    <div class="tag-image">
+                        <img src="./image/logo.jpg" alt="">
+                    </div>
+                    <h4 class="tag-name">标签</h4>
+                </li>
+                <li>
+                    <div class="tag-image">
+                        <img src="./image/logo.jpg" alt="">
+                    </div>
+                    <h4 class="tag-name">标签</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <ul class="content-list">
+                <li>
+                    <div class="content-image">
+                        <img src="./image/lelele.jpeg" alt="">
+                    </div>
+                    <h4 class="content-title">分栏一</h4>
+                    <h5 class="content-sub-title">分栏小标题</h5>
+                </li>
+                <li>
+                    <div class="content-image">
+                        <img src="./image/lelele.jpeg" alt="">
+                    </div>
+                    <h4 class="content-title">分栏一</h4>
+                    <h5 class="content-sub-title">分栏小标题</h5>
+                </li>
+                <li>
+                    <div class="content-image">
+                        <img src="./image/lelele.jpeg" alt="">
+                    </div>
+                    <h4 class="content-title">分栏一</h4>
+                    <h5 class="content-sub-title">分栏小标题</h5>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="module">
+        <div class="container">
+            <div class="module-title">
+                模块一
+            </div>
+            <div class="module-wenan">
+                <div class="wenan-img">
+
+                </div>
+                <div class="wenan-item">
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                </div>
+            </div>
+            <div class="module-wenan">
+                <div class="wenan-img">
+
+                </div>
+                <div class="wenan-item">
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="module">
+        <div class="container">
+            <div class="module-title">
+                模块二
+            </div>
+            <div class="module-wenan">
+                <div class="wenan-img">
+
+                </div>
+                <div class="wenan-item">
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                </div>
+            </div>
+            <div class="module-wenan">
+                <div class="wenan-img">
+
+                </div>
+                <div class="wenan-item">
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                    <div class="item-list">
+                        <span>这是文案</span>
+                        <span>这是文案</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="container">
+            <ul class="article-list">
+                <li>
+                    <div class="article-image">
+                        <img src="./image/article.jpg" alt="">
+                    </div>
+                    <div class="article-content">
+                        <h3>这是文章标题22号的文章标题</h3>
+                        <div class="article-info">
+                            <span class="article-souce">文章来源</span>
+                            <span class="article-time">6分钟之前</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="article-image">
+                        <img src="./image/article.jpg" alt="">
+                    </div>
+                    <div class="article-content">
+                        <h3>另一个文章的标题</h3>
+                        <div class="article-info">
+                            <span class="article-souce">文章来源</span>
+                            <span class="article-time">7分钟之前</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="another-article">
+                        <h3>这是文章标题22号的文章标题</h3>
+                        <ul class="article-image-list">
+                            <li>
+                                <img src="./image/article.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./image/article.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./image/article.jpg" alt="">
+                            </li>
+                        </ul>
+                        <div class="article-info">
+                            <span class="article-souce">文章来源</span>
+                            <span class="article-time">6分钟之前</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

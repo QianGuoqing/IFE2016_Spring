@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    // 取消a标签手指按下时出现的黑色遮罩层
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+input {
+    // 解决ios下表单元素圆角的问题
+    -webkit-appearance: none;
+}
+
+@rem: 46.875rem;
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 710/@rem;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 114/@rem;
+    background-color: #91d4da;
+    text-align: center;
+    .container {
+        position: relative;
+    }
+
+    .back {
+        color: #fff;
+        position: absolute;
+        left: 0;
+        line-height: 114/@rem;
+        font-size: 36/@rem;
+    }
+    h3 {
+        text-align: center;
+        line-height: 114/@rem;
+        color: #fff;
+        font-size: 40/@rem;
+    }
+}
+
+.nav {
+    background-color: #fff;
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 142/@rem;
+            text-align: center;
+        }
+
+        a {
+            color: #646464;
+            font-size: 36/@rem;
+        }
+    }
+}
+
+.nav-active {
+    border-bottom: 5px solid deepskyblue;
+}
+
+.banner {
+    height: 420/@rem;
+    background: url('../image/shenle.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.tags {
+    background-color: #fff;
+    .container {
+        border-bottom: 5px solid #ccc;
+    }
+
+    .tag-list {
+        display: flex;
+
+        li {
+            width: 142/@rem;
+            padding-top: 60/@rem;
+            padding-bottom: 60/@rem;
+
+            .tag-image {
+                width: 142/@rem;
+                text-align: center;
+                border-radius: 50%;
+
+                img {
+                    width: 100/@rem;
+                    border-radius: 50%;
+                }
+            }
+
+            .tag-name {
+                text-align: center;
+                width: 142/@rem;
+                font-size: 30/@rem;
+            }
+        }
+    }
+}
+
+.content {
+    background-color: #fff;
+    .content-list {
+        display: flex;
+
+        li {
+            box-sizing: border-box;
+            width: 236.666666/@rem;
+            padding: 60/@rem 0;
+
+            .content-image {
+                width:  236.666666/@rem;
+                text-align: center;
+
+                img {
+                    width: 200/@rem;
+                }
+            }
+            .content-title {
+                text-align: center;
+                width:  236.666666/@rem;
+                font-size: 36/@rem;
+            }
+            .content-sub-title {
+                text-align: center;
+                width:  236.666666/@rem;
+                font-size: 30/@rem;
+                color: #5f5f5f;
+            }
+        }
+    }
+}
+
+.module {
+    margin-top: 30/@rem;
+    background: #fff;
+
+    .module-title {
+        color: #5f5f5f;
+        font-size: 40/@rem;
+        padding: 15/@rem 0;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .module-wenan {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30/@rem;
+        padding-bottom: 30/@rem;
+
+        .wenan-img {
+            width: 180/@rem;
+            height: 180/@rem;
+            box-sizing: border-box;
+            border: 1px solid #f30;
+            background: url('../image/logo.jpg') no-repeat;
+            background-size: 100% 100%;
+        }
+        .wenan-item {
+            width: 520/@rem;
+            height: 180/@rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            .item-list {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: space-between;
+                span  {
+                    display: block;
+                    height: 85/@rem;
+                    width: 255/@rem;
+                    background-color: #f8f8f8;
+                    color: #4b4b4b;
+                    text-align: center;
+                    line-height: 85/@rem;
+                    font-size: 36/@rem;
+                }
+            }
+        }
+    }
+}
+
+.article {
+    margin-top: 30/@rem;
+    background-color: #fff;
+    margin-bottom: 100/@rem;
+
+    .article-list {
+        width: 100%;
+
+        li {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #c3c3c3;
+            padding: 20/@rem 0;
+
+            .article-image {
+                width: 240/@rem;
+                height: 200/@rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    // width: 200@rem;
+                    // height: 160/@rem;
+                }
+            }
+            .article-content {
+                width: 460/@rem;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 36/@rem;
+                    color: #666666;
+                }
+
+                .article-info {
+                    font-size: 28/@rem;
+                    color: #c3c3c3;
+
+                    .article-time {
+                        margin-left: 40/@rem;
+                    }
+                }
+            }
+
+            .another-article {
+                h3 {
+                    font-size: 36/@rem;
+                    color: #666666;
+                    width: 710/@rem;
+                }
+                .article-image-list {
+                    display: flex; 
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    li {
+                        width: 220/@rem;
+                        height: 180/@rem;
+                        border-bottom: none;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }                    
+                }
+                .article-info {
+                    font-size: 28/@rem;
+                    color: #c3c3c3;
+
+                    .article-time {
+                        margin-left: 40/@rem;
+                    }
+                }
+            }
+        }
+    }
+}
